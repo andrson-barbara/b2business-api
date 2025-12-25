@@ -14,6 +14,7 @@ import { CompanyIntegrationsModule } from './company-integrations/company-integr
 import { envValidationSchema } from './config/env.validation';
 
 import { WebhooksModule } from './webhooks/webhooks.module';
+import { HealthModule } from './health/health.module';
 
 function toStr(value: unknown): string {
   if (typeof value === 'string') return value;
@@ -65,7 +66,8 @@ function toStr(value: unknown): string {
     ModulesModule,
     CompanyModulesModule,
     CompanyIntegrationsModule,
-    WebhooksModule
+    WebhooksModule,
+    HealthModule
   ],
 })
 export class AppModule {}
